@@ -1,0 +1,13 @@
+<div>
+    <input type="text" ng-model="newMovie.name">
+    <button ng-click="addNewMovie(newMovie.name)">Add Item</button><br>
+    <hr>
+
+    <table ng-repeat="movie in movies">
+        <tr>
+            <td>{{movie.id}}</td>
+            <td>{{movie.name}}</td>
+        </tr>
+    </table>
+
+</div>
